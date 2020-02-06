@@ -9,8 +9,6 @@ const https = require('https')
 const http = require('http')
 const app = express()
 
-// Test Bodyparser
-const bodyParser = require('body-parser')
 // You need to implement cors
 const cors = require('cors')
 /*
@@ -37,8 +35,6 @@ app.use(express.static(path.join(__dirname, 'build')))
  * Added to enable cors on all requests
 */
 app.use(cors())
-// Not sure I need this
-app.use(bodyParser.json())
 
 /*
 * Redirect all request to the home page to enable react router
