@@ -48,6 +48,7 @@ const port = process.env.PORT || 80
  * Added to enable https certificate
 */
 const certificateKeyPath = process.env.CERT_KEY_PATH
+const serverKeyPath = process.env.SERVER_KEY_PATH
 const privateKey  = fs.readFileSync(serverKeyPath, 'utf8')
 const certificate = fs.readFileSync(certificateKeyPath, 'utf8')
 const options = {key: privateKey, cert: certificate}
